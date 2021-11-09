@@ -1,4 +1,3 @@
-``` cpp
 ////////////////////////criba para encotrar primos menores a n
 int countPrimes(int n) {
       bool arr[n+5];
@@ -66,4 +65,3 @@ long ncr(int n, int r) {
     }
     
  /////////////////////////////////////////////////// 
-```
