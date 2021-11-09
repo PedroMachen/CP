@@ -53,4 +53,26 @@ long long binpow(long long a, long long b, long long m) {
     return res;
 }
 
-//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////ncr
+
+long ncr(int n, int r) {
+        long ans = 1;
+        for(int i = 0; i < r; i++) {
+            ans *= n-i;
+            ans /= i+1;
+        }
+        return ans;   
+    }
+    
+ /////////////////////////////////////////////////// catalan numbers
+ 
+ int catalan(int n)
+{
+    if (n==0 || n==1)
+        return 1;
+
+    int sum = 0;
+    for(int i=1;i<n;i++)
+        sum += catalan(i)*catalan(n-i);
+    return sum;
+}
